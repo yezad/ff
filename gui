@@ -39,7 +39,7 @@ script2.Text = "Noclip"
 script2.TextColor3 = Color3.fromRGB(0, 0, 0)
 script2.TextSize = 14.000
 noclip.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/yezad/ff/main/gui", true))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/yezad/ff/main/noclip123", true))()
 end)
 
 

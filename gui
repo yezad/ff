@@ -39,7 +39,21 @@ script2.Text = "Noclip"
 script2.TextColor3 = Color3.fromRGB(0, 0, 0)
 script2.TextSize = 14.000
 noclip.MouseButton1Down:connect(function()
-	
+	noclip = false
+	game:GetService('RunService').Stepped:connect(function()
+		if noclip then
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+		end
+	end)
+	plr = game.Players.LocalPlayer
+	mouse = plr:GetMouse()
+	mouse.KeyDown:connect(function(key)
+
+		if key == "e" then
+			noclip = not noclip
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+		end
+	end)
 end)
 
 
@@ -54,6 +68,6 @@ script1.Text = "Fly"
 script1.TextColor3 = Color3.fromRGB(0, 0, 0)
 script1.TextSize = 14.000
 fly.MouseButton1Down:connect(function()
-	
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/yezad/ff/main/ffe", true))()
 end)
 

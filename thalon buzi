@@ -1,0 +1,164 @@
+
+local Gui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local admin = Instance.new("TextButton")
+local dex = Instance.new("TextButton")
+local tp = Instance.new("TextButton")
+local hub = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
+
+--Properties:
+
+Gui.Name = "Gui"
+Gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame.Parent = Gui
+Frame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Frame.Position = UDim2.new(0.341546625, -150, 0.534124613, -150)
+Frame.Size = UDim2.new(0, 659, 0, 229)
+
+admin.Name = "admin"
+admin.Parent = Frame
+admin.BackgroundColor3 = Color3.fromRGB(85, 85, 255)
+admin.Size = UDim2.new(0, 200, 0, 94)
+admin.Font = Enum.Font.SourceSans
+admin.Text = "admin"
+admin.TextColor3 = Color3.fromRGB(255, 255, 255)
+admin.TextSize = 14.000
+admin.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+admin.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/yezad/ff/main/fee1", true))()
+end)
+
+dex.Name = "dex v3"
+dex.Parent = Frame
+dex.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+dex.Position = UDim2.new(0.305810392, 0, 0, 0)
+dex.Size = UDim2.new(0, 200, 0, 94)
+dex.Font = Enum.Font.SourceSans
+dex.Text = "dex"
+dex.TextColor3 = Color3.fromRGB(255, 255, 255)
+dex.TextSize = 14.000
+dex.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+dex.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/BtPiJ9SJ"))()
+end)
+
+tp.Name = "tp"
+tp.Parent = Frame
+tp.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+tp.Position = UDim2.new(0.611620784, 0, 0, 0)
+tp.Size = UDim2.new(0, 200, 0, 94)
+tp.Font = Enum.Font.SourceSans
+tp.Text = "OwlHub"
+tp.TextColor3 = Color3.fromRGB(255, 255, 255)
+tp.TextSize = 14.000
+tp.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+
+
+hub.Name = "hub"
+hub.Parent = Frame
+hub.BackgroundColor3 = Color3.fromRGB(85, 255, 0)
+hub.Position = UDim2.new(0, 0, 0.41048035, 0)
+hub.Size = UDim2.new(0, 200, 0, 94)
+hub.Font = Enum.Font.SourceSans
+hub.Text = "Troll Hub"
+hub.TextColor3 = Color3.fromRGB(0, 0, 0)
+hub.TextSize = 14.000
+hub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/yezad/ff/main/troll%20hub"))()
+end)
+
+TextButton.Parent = Gui
+TextButton.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TextButton.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.Position = UDim2.new(0, 0, 0.5, -25)
+TextButton.Size = UDim2.new(0, 90, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Open  Close"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+
+
+
+
+-- Scripts:
+
+local function DPVDK_fake_script() -- dex.LocalScript 
+	local script = Instance.new('LocalScript', dex)
+
+	repeat wait() until game.Players.LocalPlayer.Character
+
+
+
+	local plr = game.Players.LocalPlayer
+	local MyBody = plr.Character
+	local mouse = plr:GetMouse()
+
+	script.Parent.Activated:connect(function()
+		local hit = mouse.Hit
+		MyBody:MoveTo(hit.p)
+	end)
+
+end
+coroutine.wrap(DPVDK_fake_script)()
+local function ZCHCY_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:connect(function()
+		if script.Parent.Parent.Frame.Visible == false then
+			script.Parent.Parent.Frame.Visible = true
+			script.Parent.Text = 'Close'
+
+		else
+			script.Parent.Parent.Frame.Visible = false
+		end     script.Parent.Text = 'Open'
+	end)
+end
+coroutine.wrap(ZCHCY_fake_script)()
+local function ULDADEK_fake_script() -- Background.BG_Animator 
+	local script = Instance.new('LocalScript', Background)
+
+	local TargetFrame = script.Parent
+	local R_Service = game:GetService("RunService")
+
+	while true do
+		TargetFrame:TweenPosition(UDim2.new(-1,0,-1,0),"Out","Linear",30)
+		wait(30)
+		TargetFrame.Position = UDim2.new(0,0,0,0)
+	end
+end
+coroutine.wrap(ULDADEK_fake_script)()
+local function IVOHRYM_fake_script() -- Loader.loader 
+	local script = Instance.new('LocalScript', Loader)
+
+
+
+	repeat wait(0.1) until script.Parent.Parent.Enabled == true
+
+	local Bar = script.Parent.LoadingBar.Bar
+	local Status = script.Parent.Status
+	local Status2 = script.Parent.TopBar.Label
+	local Activate = script.Parent.Parent.Activate
+
+	if game.Players.LocalPlayer and game.Players.LocalPlayer.Character then
+		wait(5)
+		Bar:TweenSize(UDim2.new(1,0,1,0),"In","Quad",3)
+		wait(3)
+		Status.Text = "Assets Loaded!"
+		Status2.Text = "yezad loaded :3"
+		wait(2)
+		script.Parent:TweenSize(UDim2.new(0,0,0,0),"Out","Linear",1)
+		script.Parent:TweenPosition(UDim2.new(0.5,0,0.5,0),"Out","Linear",1)
+		wait(1)
+		script.Parent:Destroy()
+		Activate:Fire()		
+	end
+
+end
+coroutine.wrap(IVOHRYM_fake_script)()
+

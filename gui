@@ -1,0 +1,59 @@
+
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local label = Instance.new("TextLabel")
+local script2 = Instance.new("TextButton")
+local script1 = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+main.Position = UDim2.new(0.736921906, 0, 0.431750715, 0)
+main.Size = UDim2.new(0, 326, 0, 311)
+main.Active = true
+main.Draggable = true
+
+label.Name = "label"
+label.Parent = ScreenGui
+label.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+label.BorderColor3 = Color3.fromRGB(0, 0, 255)
+label.Position = UDim2.new(0.736921906, 0, 0.430267066, 0)
+label.Size = UDim2.new(0, 326, 0, 50)
+label.Font = Enum.Font.SourceSansLight
+label.Text = "GUI"
+label.TextColor3 = Color3.fromRGB(255, 255, 255)
+label.TextSize = 14.000
+
+script2.Name = "script 2"
+script2.Parent = ScreenGui
+script2.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+script2.Position = UDim2.new(0.736921906, 0, 0.707715154, 0)
+script2.Size = UDim2.new(0, 326, 0, 125)
+script2.Font = Enum.Font.SourceSans
+script2.Text = "Noclip"
+script2.TextColor3 = Color3.fromRGB(0, 0, 0)
+script2.TextSize = 14.000
+noclip.MouseButton1Down:connect(function()
+	
+end)
+
+
+script1.Name = "script 1"
+script1.Parent = ScreenGui
+script1.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+script1.BorderColor3 = Color3.fromRGB(0, 0, 255)
+script1.Position = UDim2.new(0.736921906, 0, 0.504451036, 0)
+script1.Size = UDim2.new(0, 326, 0, 125)
+script1.Font = Enum.Font.SourceSans
+script1.Text = "Fly"
+script1.TextColor3 = Color3.fromRGB(0, 0, 0)
+script1.TextSize = 14.000
+fly.MouseButton1Down:connect(function()
+	
+end)
+
